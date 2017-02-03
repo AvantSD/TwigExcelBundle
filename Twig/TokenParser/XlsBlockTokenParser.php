@@ -1,8 +1,8 @@
 <?php
 
-namespace MewesK\TwigExcelBundle\Twig\TokenParser;
+namespace Recranet\TwigExcelBundle\Twig\TokenParser;
 
-use MewesK\TwigExcelBundle\Twig\NodeHelper;
+use Recranet\TwigExcelBundle\Twig\NodeHelper;
 use Twig_Error_Syntax;
 use Twig_Node;
 use Twig_Node_Block;
@@ -14,7 +14,7 @@ use Twig_TokenParser;
 /**
  * Class XlsBlockTokenParser
  *
- * @package MewesK\TwigExcelBundle\Twig\TokenParser
+ * @package Recranet\TwigExcelBundle\Twig\TokenParser
  */
 class XlsBlockTokenParser extends Twig_TokenParser
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace MewesK\TwigExcelBundle\Twig\Node;
+namespace Recranet\TwigExcelBundle\Twig\Node;
 
 use Twig_Compiler;
 use Twig_Node;
@@ -9,7 +9,7 @@ use Twig_Node_Expression;
 /**
  * Class XlsDocumentNode
  *
- * @package MewesK\TwigExcelBundle\Twig\Node
+ * @package Recranet\TwigExcelBundle\Twig\Node
  */
 class XlsDocumentNode extends Twig_Node implements SyntaxAwareNodeInterface
 {
@@ -46,7 +46,7 @@ class XlsDocumentNode extends Twig_Node implements SyntaxAwareNodeInterface
             ->write('$documentProperties = ')
             ->subcompile($this->getNode('properties'))
             ->raw(';' . PHP_EOL)
-            ->write('$context[\'phpExcel\'] = new MewesK\TwigExcelBundle\Wrapper\PhpExcelWrapper($context, $this->env);' . PHP_EOL)
+            ->write('$context[\'phpExcel\'] = new Recranet\TwigExcelBundle\Wrapper\PhpExcelWrapper($context, $this->env);' . PHP_EOL)
             ->write('$context[\'phpExcel\']->startDocument($documentProperties);' . PHP_EOL)
             ->write('unset($documentProperties);' . PHP_EOL)
             ->subcompile($this->getNode('body'))

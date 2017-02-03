@@ -1,8 +1,8 @@
 <?php
 
-namespace MewesK\TwigExcelBundle\Twig;
+namespace Recranet\TwigExcelBundle\Twig;
 
-use MewesK\TwigExcelBundle\Twig\Node\SyntaxAwareNodeInterface;
+use Recranet\TwigExcelBundle\Twig\Node\SyntaxAwareNodeInterface;
 use Twig_Error_Syntax;
 use Twig_Node;
 use Twig_Node_Block;
@@ -15,7 +15,7 @@ use Twig_Parser;
 /**
  * Class NodeHelper
  *
- * @package MewesK\TwigExcelBundle\Twig\TokenParser
+ * @package Recranet\TwigExcelBundle\Twig\TokenParser
  */
 class NodeHelper
 {
@@ -76,7 +76,7 @@ class NodeHelper
         $parentName = null;
 
         foreach (array_reverse($path) as $className) {
-            if (strpos($className, 'MewesK\TwigExcelBundle\Twig\Node\Xls') === 0) {
+            if (strpos($className, 'Recranet\TwigExcelBundle\Twig\Node\Xls') === 0) {
                 $parentName = $className;
                 break;
             }

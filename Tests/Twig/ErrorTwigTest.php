@@ -1,10 +1,10 @@
 <?php
 
-namespace MewesK\TwigExcelBundle\Tests\Twig;
+namespace Recranet\TwigExcelBundle\Tests\Twig;
 
 /**
  * Class ErrorTwigTest
- * @package MewesK\TwigExcelBundle\Tests\Twig
+ * @package Recranet\TwigExcelBundle\Tests\Twig
  */
 class ErrorTwigTest extends AbstractTwigTest
 {
@@ -51,7 +51,7 @@ class ErrorTwigTest extends AbstractTwigTest
     {
         $this->setExpectedException(
             '\Twig_Error_Syntax',
-            'Node "MewesK\TwigExcelBundle\Twig\Node\XlsDocumentNode" is not allowed inside of Node "MewesK\TwigExcelBundle\Twig\Node\XlsSheetNode"'
+            'Node "Recranet\TwigExcelBundle\Twig\Node\XlsDocumentNode" is not allowed inside of Node "Recranet\TwigExcelBundle\Twig\Node\XlsSheetNode"'
         );
         $this->getDocument('documentError', $format);
     }

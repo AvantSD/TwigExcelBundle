@@ -1,6 +1,6 @@
 <?php
 
-namespace MewesK\TwigExcelBundle\Twig\TokenParser;
+namespace Recranet\TwigExcelBundle\Twig\TokenParser;
 
 use Twig_Node;
 use Twig_Node_Expression_Array;
@@ -10,7 +10,7 @@ use Twig_TokenParser;
 /**
  * Class AbstractTokenParser
  *
- * @package MewesK\TwigExcelBundle\Twig\TokenParser
+ * @package Recranet\TwigExcelBundle\Twig\TokenParser
  */
 abstract class AbstractTokenParser extends Twig_TokenParser
 {

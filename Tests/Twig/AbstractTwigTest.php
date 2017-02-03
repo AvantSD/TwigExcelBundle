@@ -1,9 +1,9 @@
 <?php
 
-namespace MewesK\TwigExcelBundle\Tests\Twig;
+namespace Recranet\TwigExcelBundle\Tests\Twig;
 
 use InvalidArgumentException;
-use MewesK\TwigExcelBundle\Twig\TwigExcelExtension;
+use Recranet\TwigExcelBundle\Twig\TwigExcelExtension;
 use PHPExcel_Reader_Excel2007;
 use PHPExcel_Reader_Excel5;
 use PHPExcel_Reader_OOCalc;
@@ -17,7 +17,7 @@ use Twig_Loader_Filesystem;
 
 /**
  * Class AbstractTwigTest
- * @package MewesK\TwigExcelBundle\Tests\Twig
+ * @package Recranet\TwigExcelBundle\Tests\Twig
  */
 abstract class AbstractTwigTest extends PHPUnit_Framework_TestCase
 {
@@ -80,7 +80,6 @@ abstract class AbstractTwigTest extends PHPUnit_Framework_TestCase
             case 'xlsx':
                 $reader = new PHPExcel_Reader_Excel2007();
                 break;
-            case 'pdf':
             case 'csv':
                 return $tempFilePath;
             default:
@@ -106,10 +105,10 @@ abstract class AbstractTwigTest extends PHPUnit_Framework_TestCase
     public static function setUpBeforeClass()
     {
         static::$fileSystem = new Filesystem();
-        
+
         $twigFileSystem = new Twig_Loader_Filesystem([__DIR__ . static::$RESOURCE_PATH]);
         $twigFileSystem->addPath( __DIR__ . static::$TEMPLATE_PATH, 'templates');
-        
+
         static::$environment = new Twig_Environment($twigFileSystem, ['strict_variables' => true]);
         static::$environment->addExtension(new TwigExcelExtension());
         static::$environment->setCache(__DIR__ . static::$TEMP_PATH);

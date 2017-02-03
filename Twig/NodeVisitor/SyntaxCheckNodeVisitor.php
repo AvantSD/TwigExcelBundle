@@ -1,9 +1,9 @@
 <?php
 
-namespace MewesK\TwigExcelBundle\Twig\NodeVisitor;
+namespace Recranet\TwigExcelBundle\Twig\NodeVisitor;
 
-use MewesK\TwigExcelBundle\Twig\Node\SyntaxAwareNodeInterface;
-use MewesK\TwigExcelBundle\Twig\NodeHelper;
+use Recranet\TwigExcelBundle\Twig\Node\SyntaxAwareNodeInterface;
+use Recranet\TwigExcelBundle\Twig\NodeHelper;
 use Twig_BaseNodeVisitor;
 use Twig_Environment;
 use Twig_Error_Syntax;
@@ -14,7 +14,7 @@ use Twig_Node_Macro;
 /**
  * Class SyntaxCheckNodeVisitor
  *
- * @package MewesK\TwigExcelBundle\Twig\NodeVisitor
+ * @package Recranet\TwigExcelBundle\Twig\NodeVisitor
  */
 class SyntaxCheckNodeVisitor extends Twig_BaseNodeVisitor
 {

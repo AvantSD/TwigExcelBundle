@@ -12,7 +12,7 @@
         },
         {
             "name": "Community Contributors",
-            "homepage": "https://github.com/MewesK/TwigExcelBundle/graphs/contributors"
+            "homepage": "https://github.com/Recranet/TwigExcelBundle/graphs/contributors"
         }
     ],
     "require": {

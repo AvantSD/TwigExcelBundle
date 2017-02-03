@@ -1,11 +1,11 @@
 <?php
 
-namespace MewesK\TwigExcelBundle\Twig\Node;
+namespace Recranet\TwigExcelBundle\Twig\Node;
 
 /**
  * Interface SyntaxAwareNodeInterface
  *
- * @package MewesK\TwigExcelBundle\Twig\Node
+ * @package Recranet\TwigExcelBundle\Twig\Node
  */
 interface SyntaxAwareNodeInterface
 {

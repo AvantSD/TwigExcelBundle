@@ -1,6 +1,6 @@
 <?php
 
-namespace MewesK\TwigExcelBundle\Wrapper;
+namespace Recranet\TwigExcelBundle\Wrapper;
 
 use PHPExcel_Cell;
 use Twig_Environment;
@@ -8,7 +8,7 @@ use Twig_Environment;
 /**
  * Class XlsCellWrapper
  *
- * @package MewesK\TwigExcelBundle\Wrapper
+ * @package Recranet\TwigExcelBundle\Wrapper
  */
 class XlsCellWrapper extends AbstractWrapper
 {

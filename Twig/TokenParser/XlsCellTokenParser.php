@@ -1,15 +1,15 @@
 <?php
 
-namespace MewesK\TwigExcelBundle\Twig\TokenParser;
+namespace Recranet\TwigExcelBundle\Twig\TokenParser;
 
-use MewesK\TwigExcelBundle\Twig\Node\XlsCellNode;
+use Recranet\TwigExcelBundle\Twig\Node\XlsCellNode;
 use Twig_Node_Expression_Constant;
 use Twig_Token;
 
 /**
  * Class XlsCellTokenParser
  *
- * @package MewesK\TwigExcelBundle\Twig\TokenParser
+ * @package Recranet\TwigExcelBundle\Twig\TokenParser
  */
 class XlsCellTokenParser extends AbstractTokenParser
 {

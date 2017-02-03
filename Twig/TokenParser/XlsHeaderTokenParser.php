@@ -1,15 +1,15 @@
 <?php
 
-namespace MewesK\TwigExcelBundle\Twig\TokenParser;
+namespace Recranet\TwigExcelBundle\Twig\TokenParser;
 
-use MewesK\TwigExcelBundle\Twig\Node\XlsHeaderNode;
+use Recranet\TwigExcelBundle\Twig\Node\XlsHeaderNode;
 use Twig_Node_Expression_Constant;
 use Twig_Token;
 
 /**
  * Class XlsHeaderTokenParser
  *
- * @package MewesK\TwigExcelBundle\Twig\TokenParser
+ * @package Recranet\TwigExcelBundle\Twig\TokenParser
  */
 class XlsHeaderTokenParser extends AbstractTokenParser
 {

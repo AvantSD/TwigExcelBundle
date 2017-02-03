@@ -1,6 +1,6 @@
 <?php
 
-namespace MewesK\TwigExcelBundle\DependencyInjection;
+namespace Recranet\TwigExcelBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -8,11 +8,11 @@ use Symfony\Component\DependencyInjection\Loader;
 use Symfony\Component\HttpKernel\DependencyInjection\ConfigurableExtension;
 
 /**
- * Class MewesKTwigExcelExtension
+ * Class RecranetTwigExcelExtension
  *
- * @package MewesK\TwigExcelBundle\DependencyInjection
+ * @package Recranet\TwigExcelBundle\DependencyInjection
  */
-class MewesKTwigExcelExtension extends ConfigurableExtension
+class RecranetTwigExcelExtension extends ConfigurableExtension
 {
     /**
      * {@inheritDoc}
@@ -23,7 +23,7 @@ class MewesKTwigExcelExtension extends ConfigurableExtension
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('services.xml');
 
-        $container->setParameter('mewes_k_twig_excel.pre_calculate_formulas', $mergedConfig['pre_calculate_formulas']);
-        $container->setParameter('mewes_k_twig_excel.disk_caching_directory', $mergedConfig['disk_caching_directory']);
+        $container->setParameter('recranet_twig_excel.pre_calculate_formulas', $mergedConfig['pre_calculate_formulas']);
+        $container->setParameter('recranet_twig_excel.disk_caching_directory', $mergedConfig['disk_caching_directory']);
     }
 }

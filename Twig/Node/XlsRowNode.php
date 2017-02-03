@@ -1,6 +1,6 @@
 <?php
 
-namespace MewesK\TwigExcelBundle\Twig\Node;
+namespace Recranet\TwigExcelBundle\Twig\Node;
 
 use Twig_Compiler;
 use Twig_Node;
@@ -9,7 +9,7 @@ use Twig_Node_Expression;
 /**
  * Class XlsRowNode
  *
- * @package MewesK\TwigExcelBundle\Twig\Node
+ * @package Recranet\TwigExcelBundle\Twig\Node
  */
 class XlsRowNode extends Twig_Node implements SyntaxAwareNodeInterface
 {
@@ -46,7 +46,7 @@ class XlsRowNode extends Twig_Node implements SyntaxAwareNodeInterface
     public function getAllowedParents()
     {
         return [
-            'MewesK\TwigExcelBundle\Twig\Node\XlsSheetNode'
+            'Recranet\TwigExcelBundle\Twig\Node\XlsSheetNode'
         ];
     }
 

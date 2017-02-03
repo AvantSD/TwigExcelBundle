@@ -1,10 +1,10 @@
 <?php
 
-namespace MewesK\TwigExcelBundle\Tests\Functional;
+namespace Recranet\TwigExcelBundle\Tests\Functional;
 
 /**
  * Class CustomConfigTest
- * @package MewesK\TwigExcelBundle\Tests\Functional
+ * @package Recranet\TwigExcelBundle\Tests\Functional
  */
 class CustomConfigTest extends AbstractControllerTest
 {
@@ -38,7 +38,7 @@ class CustomConfigTest extends AbstractControllerTest
         $document = $this->getDocument(static::$router->generate('test_default', ['templateName' => 'simple', '_format' => $format]), $format);
         static::assertNotNull($document, 'Document does not exist');
 
-        static::assertFalse(static::$kernel->getContainer()->getParameter('mewes_k_twig_excel.pre_calculate_formulas'), 'Unexpected parameter');
-        static::assertStringEndsWith('tmp/phpexcel', static::$kernel->getContainer()->getParameter('mewes_k_twig_excel.disk_caching_directory'), 'Unexpected parameter');
+        static::assertFalse(static::$kernel->getContainer()->getParameter('recranet_twig_excel.pre_calculate_formulas'), 'Unexpected parameter');
+        static::assertStringEndsWith('tmp/phpexcel', static::$kernel->getContainer()->getParameter('recranet_twig_excel.disk_caching_directory'), 'Unexpected parameter');
     }
 }

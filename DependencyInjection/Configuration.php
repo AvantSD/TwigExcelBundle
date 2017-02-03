@@ -1,14 +1,14 @@
 <?php
 
-namespace MewesK\TwigExcelBundle\DependencyInjection;
+namespace Recranet\TwigExcelBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 
 /**
  * Class Configuration
- * 
- * @package MewesK\TwigExcelBundle\DependencyInjection
+ *
+ * @package Recranet\TwigExcelBundle\DependencyInjection
  */
 class Configuration implements ConfigurationInterface
 {
@@ -19,7 +19,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('mewes_k_twig_excel');
+        $rootNode = $treeBuilder->root('recranet_twig_excel');
 
         $rootNode
             ->children()

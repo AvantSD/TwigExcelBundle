@@ -7,7 +7,7 @@ use Symfony\Component\HttpKernel\Kernel;
 /**
  * Class AppKernel
  *
- * @package MewesK\TwigExcelBundle\Tests\Fixtures
+ * @package Recranet\TwigExcelBundle\Tests\Fixtures
  */
 class AppKernel extends Kernel
 {
@@ -45,8 +45,8 @@ class AppKernel extends Kernel
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new Symfony\Bundle\TwigBundle\TwigBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-            new MewesK\TwigExcelBundle\MewesKTwigExcelBundle(),
-            new MewesK\TwigExcelBundle\Tests\Fixtures\TestBundle\TestBundle()
+            new Recranet\TwigExcelBundle\RecranetTwigExcelBundle(),
+            new Recranet\TwigExcelBundle\Tests\Fixtures\TestBundle\TestBundle()
         ];
     }
 

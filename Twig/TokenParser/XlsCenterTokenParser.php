@@ -1,14 +1,14 @@
 <?php
 
-namespace MewesK\TwigExcelBundle\Twig\TokenParser;
+namespace Recranet\TwigExcelBundle\Twig\TokenParser;
 
-use MewesK\TwigExcelBundle\Twig\Node\XlsCenterNode;
+use Recranet\TwigExcelBundle\Twig\Node\XlsCenterNode;
 use Twig_Token;
 
 /**
  * Class XlsCenterTokenParser
  *
- * @package MewesK\TwigExcelBundle\Twig\TokenParser
+ * @package Recranet\TwigExcelBundle\Twig\TokenParser
  */
 class XlsCenterTokenParser extends AbstractTokenParser
 {

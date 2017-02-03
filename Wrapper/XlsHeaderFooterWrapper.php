@@ -1,12 +1,12 @@
 <?php
 
-namespace MewesK\TwigExcelBundle\Wrapper;
+namespace Recranet\TwigExcelBundle\Wrapper;
 use Twig_Environment;
 
 /**
  * Class XlsHeaderFooterWrapper
  *
- * @package MewesK\TwigExcelBundle\Wrapper
+ * @package Recranet\TwigExcelBundle\Wrapper
  */
 class XlsHeaderFooterWrapper extends AbstractWrapper
 {

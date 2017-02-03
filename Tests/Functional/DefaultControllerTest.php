@@ -1,12 +1,12 @@
 <?php
 
-namespace MewesK\TwigExcelBundle\Tests\Functional;
+namespace Recranet\TwigExcelBundle\Tests\Functional;
 
 use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Class DefaultControllerTest
- * @package MewesK\TwigExcelBundle\Tests\Functional
+ * @package Recranet\TwigExcelBundle\Tests\Functional
  */
 class DefaultControllerTest extends AbstractControllerTest
 {

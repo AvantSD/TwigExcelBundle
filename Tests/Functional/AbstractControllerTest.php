@@ -1,6 +1,6 @@
 <?php
 
-namespace MewesK\TwigExcelBundle\Tests\Functional;
+namespace Recranet\TwigExcelBundle\Tests\Functional;
 
 use InvalidArgumentException;
 use PHPExcel_Reader_Excel2007;
@@ -14,7 +14,7 @@ use Symfony\Component\Filesystem\Filesystem;
 /**
  * Class AbstractControllerTest
  * 
- * @package MewesK\TwigExcelBundle\Tests\Functional
+ * @package Recranet\TwigExcelBundle\Tests\Functional
  */
 abstract class AbstractControllerTest extends WebTestCase
 {
